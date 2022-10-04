@@ -4,7 +4,7 @@
 
 void addtoList(machine *list, char *str)
 {
-  job *newnode = (job *)calloc(1, sizeof(job)); 
+  	job *newnode = (job *)calloc(1, sizeof(job)); 
 	job * temp = NULL;
 	newnode ->next = NULL;
 	if(list == NULL)
