@@ -1,17 +1,17 @@
-sprint1: ../obj/main.o ../obj/stringvalid.o ../obj/createList.o ../obj/addtoList.o ../obj/validAdd.o ../obj/invalidFile.o ../obj/assignJob.o ../obj/displayList.o
+sprint1: main.o stringvalid.o createList.o addtoList.o validAdd.o invalidFile.o assignJob.o displayList.o
          gcc -o ../bin/sprint1.exe ../bin/main.o ../bin/stringvalid.o ../bin/createList.o ../bin/addtoList.o ../bin/validAdd.o ../bin/invalidFile.o ../bin/assignJob.o ../bin/displayList.o
          
 projtest: testdriver.o stringvalid.o testsuite.o
           gcc -o ../bin/projtest.exe ../bin/testdriver.o ../bin/testsuite.o -lcunit
          
 testdriver.o: ../scr/testdriver.c
-              gcc -o ../obj/testdriver.o -c ../src/testdriver.c
+              gcc -o ../bin/testdriver.o -c ../src/testdriver.c
               
 testsuite.o: ../scr/testsuite.c
-             gcc -o ../obj/testsuite.o -c ../src/testsuite.c
+             gcc -o ../bin/testsuite.o -c ../src/testsuite.c
              
 main.o: ../src/main.c
-        gcc -o ../obj/main.o -c ../src/main.c -lpthread
+        gcc -o ../bin/main.o -c ../src/main.c -lpthread
         
 stringvalid.o: ../src/stringvalid.c
                gcc -o ../obj/stringvalid.o -c ../src/stringvalid.c -lpthread
