@@ -35,4 +35,4 @@ assignJob.o: ../src/assignJob.c
              gcc -o ../obj/assignJob.o -c ../src/assignJob.c -lpthread
              
 clean:
-       rm ./bin/*.exe ./obj/*.o invalidFile.txt Schedule1.txt Schedule2.txt Schedule3.txt
+       rm ../bin/*.exe ../obj/*.o invalidFile.txt Schedule1.txt Schedule2.txt Schedule3.txt
