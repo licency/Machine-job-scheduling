@@ -79,6 +79,6 @@ int validAdd(job* st,int t1,int t2) // Taking a job, its start time and end time
 		   fprintf(fp3,"%s:%d:%d\n",st->jno,t1+1,t2);
 		}
          fclose(fp3);
-	   return SUCC;
+	   return SUCCESS;
 	}
 }
