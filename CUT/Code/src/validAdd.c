@@ -36,7 +36,7 @@ int validAdd(job* st,int t1,int t2) // Taking a job, its start time and end time
     	      	return SUCCESS;
 	}
       	//checking for machine 2
-	if(strcmp(M2,st->m)==0|| strcmp(m2,st->m)==0)
+	else if(strcmp(M2,st->m)==0|| strcmp(m2,st->m)==0)
     	{
     		fp2 = fopen ("../data/Schedule2.txt", "a+");
 		//check file opening
@@ -59,7 +59,7 @@ int validAdd(job* st,int t1,int t2) // Taking a job, its start time and end time
 		return SUCCESS;
 	}
       	//checking for machine 3
-	if(strcmp(M3,st->m)==0 || strcmp(m3,st->m)==0 )
+	else if(strcmp(M3,st->m)==0 || strcmp(m3,st->m)==0 )
       	{
 		fp3 = fopen ("../data/Schedule3.txt", "a+");
 		//check file opening
@@ -81,4 +81,6 @@ int validAdd(job* st,int t1,int t2) // Taking a job, its start time and end time
          	fclose(fp3);
 	   	return SUCCESS;
 	}
+	else return FAIL;
+	//removing warning beacuse only if was used, added else if and in the last else.
 }
