@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "../header/header.h"
 #define MAX 500
 
