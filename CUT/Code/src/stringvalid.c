@@ -48,5 +48,6 @@ int stringValid(char str[MAX])
 	{
 		return FAIL;
 	}
+							     
 	}
 }
