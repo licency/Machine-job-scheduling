@@ -1,6 +1,6 @@
 //valid add function
 #include <string.h>
-#include "../include/header.h"      //importing the custom header file
+#include "../header/header.h"      //importing the custom header file
 
 int validAdd(job* st,int t1,int t2) // Taking a job, its start time and end time as parameters
 {
