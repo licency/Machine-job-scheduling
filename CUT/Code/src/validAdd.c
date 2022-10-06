@@ -15,7 +15,7 @@ int validAdd(job* st,int t1,int t2) // Taking a job, its start time and end time
     	//checking for machine 1
     	if(strcmp(M1,st->m)==0 || strcmp(m1,st->m)==0)
     	{
-		fp1 = fopen ("data/Schedule1.txt", "a+");
+		fp1 = fopen ("../data/Schedule1.txt", "a+");
 		//check file opening
 		if(fp1==NULL)
 		{
@@ -38,7 +38,7 @@ int validAdd(job* st,int t1,int t2) // Taking a job, its start time and end time
       	//checking for machine 2
 	if(strcmp(M2,st->m)==0|| strcmp(m2,st->m)==0)
     	{
-    		fp2 = fopen ("data/Schedule2.txt", "a+");
+    		fp2 = fopen ("../data/Schedule2.txt", "a+");
 		//check file opening
 		if(fp2==NULL)
 		{
@@ -61,7 +61,7 @@ int validAdd(job* st,int t1,int t2) // Taking a job, its start time and end time
       	//checking for machine 3
 	if(strcmp(M3,st->m)==0 || strcmp(m3,st->m)==0 )
       	{
-		fp3 = fopen ("data/Schedule3.txt", "a+");
+		fp3 = fopen ("../data/Schedule3.txt", "a+");
 		//check file opening
 		if(fp3==NULL)
 		{
