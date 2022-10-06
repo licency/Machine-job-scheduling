@@ -33,7 +33,7 @@ int validAdd(job* st,int t1,int t2) // Taking a job, its start time and end time
 		   fprintf(fp1,"%s:%d:%d\n",st->jno,t1+1,t2);
 		}
             fclose(fp1);
-    	      return SUCC;
+    	      return SUCCESS;
 	}
       //checking for machine 2
 	if(strcmp(M2,st->m)==0|| strcmp(m2,st->m)==0)
@@ -56,7 +56,7 @@ int validAdd(job* st,int t1,int t2) // Taking a job, its start time and end time
 		   fprintf(fp2,"%s:%d:%d\n",st->jno,t1+1,t2);
 		}
         fclose(fp2);
-		return SUCC;
+		return SUCCESS;
 	}
       //checking for machine 3
 	if(strcmp(M3,st->m)==0 || strcmp(m3,st->m)==0 )
