@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <pthread.h>
-#include "../include/header.h"      //custom header file for struct and linked list initialization
-#include "../include/test.h"        //custom header file for stringValid() function call
+#include "../header/header.h"      //custom header file for struct and linked list initialization
+#include "../header/test.h"        //custom header file for stringValid() function call
 
 #define MAX 500
 
