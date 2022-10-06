@@ -1,0 +1,4 @@
+@KJ002:Washing clothes:M3:30:Whirlpool
+K52oo4:Floor furnishing:m2:90:Nath furnishers
+L$SJV:Bike Servicing:M1:40:PayPenny
+GU002l:Sweeping:m3:15:
