@@ -2,7 +2,7 @@
 #include <pthread.h>     
 #include <stdlib.h>  
 #include<string.h>
-#include "../include/assignJob.h"           //custom header file
+#include "../header/assignJob.h"           //custom header file
 
 #define MAX 500
 
