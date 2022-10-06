@@ -6,7 +6,7 @@
 void addtoList(machine *list, char *str)
 {
   	job *newnode = (job *)calloc(1, sizeof(job)); 
-	job * temp = NULL;
+	//job * temp = NULL; removing warning
 	newnode->next = NULL;
 	if(list->head == NULL)
 	{
