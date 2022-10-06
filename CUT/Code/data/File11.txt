@@ -1,4 +1,4 @@
-JZ200:Painting:M2:20:Asian Paints
+J0200:Painting:M2:20:Asian Paints
 K20LO:House Keeping:M1:
 uu67G:Window cleaning:10:Urban company
 :Feet spa:m3:50:urban clap
