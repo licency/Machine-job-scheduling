@@ -1,4 +1,4 @@
-#include "../include/header.h"
+#include "../header/header.h"
 #define MAX 500
 
 int stringValid(char str[MAX])
