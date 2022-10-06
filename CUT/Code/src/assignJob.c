@@ -20,9 +20,9 @@ void* assignJob(void* data)
     char *my_data = (char *)data;         
     FILE *fpr;
     fpr= fopen(my_data,"r");
-    int i=0;
+//  int i=0; removing warning
     job *temp=NULL;
-    int add=0;
+//    int add=0; removing warning
     machine *job1=(machine*)calloc(1,sizeof(machine));
     //checking if file is accessible
     if (fpr == NULL)
