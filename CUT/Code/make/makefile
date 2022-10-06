@@ -29,7 +29,7 @@ invalidFile.o: ../src/invalidFile.c
                gcc -o ../obj/invalidFile.o -c ../src/invalidFile.c -lpthread
                
 displayList.o: ../src/displayList.c
-               gcc -o ../obj/displayList.o -c ../src/displayFile.c -lpthread
+               gcc -o ../obj/displayList.o -c ../src/displayList.c -lpthread
                
 assignJob.o: ../src/assignJob.c
              gcc -o ../obj/assignJob.o -c ../src/assignJob.c -lpthread
