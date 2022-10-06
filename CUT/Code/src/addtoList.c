@@ -42,7 +42,7 @@ void addtoList(machine *list, char *str)
 				strcpy(newnode->m, token);
 				break;
 			case 3:
-				newnode->t = atoi(token);
+				newnode->time = atoi(token);
 				break;
 			case 4:
 				newnode->client = (char *)calloc(strlen(token), sizeof(char));
