@@ -19,7 +19,7 @@ int stringValid(char str[MAX])
 					break;
 						else if(str[k+1]=='M' || str[k+1]=='m')
 						{
-							if(!(str[k+2]>='1' && str[k+2]<='3))
+							if(!(str[k+2]>='1' && str[k+2]<='3'))
 							{
 								break;
 							}
