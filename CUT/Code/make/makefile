@@ -1,4 +1,4 @@
-sprint1: main.o stringvalid.o createList.o addtoList.o validAdd.o invalidFile.o assignJob.o displayList.o
+sprint1: ../obj/main.o ../obj/stringvalid.o ../obj/createList.o ../obj/addtoList.o ../obj/validAdd.o ../obj/invalidFile.o ../obj/assignJob.o ../obj/displayList.o
          gcc -o ../bin/sprint1.exe ../bin/main.o ../bin/stringvalid.o ../bin/createList.o ../bin/addtoList.o ../bin/validAdd.o ../bin/invalidFile.o ../bin/assignJob.o ../bin/displayList.o
          
 projtest: testdriver.o stringvalid.o testsuite.o
