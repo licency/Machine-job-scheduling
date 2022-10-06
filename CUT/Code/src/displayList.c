@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include "../header/header.h>
 
 void displayList(machine *list)
 {
