@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
+#include "../header/header.h"
 
 void addtoList(machine *list, char *str)
 {
