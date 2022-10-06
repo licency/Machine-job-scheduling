@@ -23,3 +23,4 @@ void addtoList(machine *list, char *str);
 int validAdd(job *st, int t1, int t2);
 
 void displayList(machine *list);
+void invalidFile(char*);
