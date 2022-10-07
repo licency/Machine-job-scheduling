@@ -11,21 +11,22 @@ int timeT1=1,timeT2=1,timeT3=1;
 
 int main(int argc, char* argv[])
 {
-    int    rc;                                        
+    int rc;                                        
     pthread_t  thread_id[argc-1];
      
     printf("\n\n----------------Machine Job Scheduling----------------\n\n");
     //checking argc 
-    if(argc<2){
+    if(argc<2)
+    {
         printf("\n\tInvalid usage: Enter the file name");
         printf("\n\tMust enter atleast one file name\n");
         exit(1);
     } 
     //Displaying file names entered by user
-    printf("\n     File names entered by user are : ");
+    printf("\n~~~~~File names entered by user are : ");
     for(int i =0;i<argc-1;i++)
     {
-    printf("\n\tThe file %d : %s " , i+1,argv[i+1]); 
+        printf("\n\tThe file %d : %s " , i+1,argv[i+1]); 
     }
     printf("\n");
     //initialization of mutex M1
@@ -71,11 +72,13 @@ int main(int argc, char* argv[])
     pthread_mutex_destroy(&invalidLock);
 
     //Terminating all threads
-    for(int i=0;i<argc-1;i++){
+    for(int i=0;i<argc-1;i++)
+    {
         pthread_join(thread_id[i],NULL);        
     }
    
-    for(int i=0;i<argc-1;i++){
+    for(int i=0;i<argc-1;i++)
+    {
         pthread_exit(NULL);       
     }    
 }
