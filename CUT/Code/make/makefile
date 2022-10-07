@@ -3,13 +3,13 @@ sprint: main.o stringvalid.o createList.o addtoList.o validAdd.o invalidFile.o a
 	gcc -o ../bin/sprint.exe ../obj/main.o ../obj/stringvalid.o ../obj/createList.o ../obj/addtoList.o ../obj/validAdd.o ../obj/invalidFile.o ../obj/assignJob.o ../obj/displayList.o
          
 projtest: testdriver.o stringvalid.o testsuite.o
-	gcc -o ../bin/projtest.exe ../bin/testdriver.o ../bin/testsuite.o -lcunit
+	gcc -o ../bin/projtest.exe ../obj/testdriver.o ../obj/testsuite.o ../obj/stringvalid.o -lcunit
          
 testdriver.o: ../src/testdriver.c
-	gcc -o ../bin/testdriver.o -c ../src/testdriver.c
+	gcc -o ../obj/testdriver.o -c ../src/testdriver.c -lcunit
               
 testsuite.o: ../src/testsuite.c
-	gcc -o ../bin/testsuite.o -c ../src/testsuite.c
+	gcc -o ../obj/testsuite.o -c ../src/testsuite.c -lcunit
              
 main.o: ../src/main.c
 	gcc -o ../obj/main.o -c ../src/main.c -lpthread -Wall
