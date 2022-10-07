@@ -1,10 +1,10 @@
-#include "Cunit/basic.h"
-#include "../include/test.h"
-#include "../include/testsuite.h"
+#include "CUnit/CUnit.h"
+#include "../header/test.h"
+#include "../header/testsuite.h"
 
  int main()
  {
-     CU_pSuite psuite = NULL;
+     CU_pSuite pSuite = NULL;
      /* The active CUnit test registry must be initialized
      before use. The user should call CU_initialize_registry()
      before calling any other CUnit functions. Failure to do
