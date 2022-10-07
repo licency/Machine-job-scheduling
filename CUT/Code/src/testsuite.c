@@ -1,6 +1,6 @@
 #include "CUnit/Basic.h"
 
-#include "../include/test.h" //(the header file containing function)
+#include "../header/test.h" //(the header file containing function)
 
 /* The suite initialization function.
  * Returns zero on success, non-zero otherwise.
