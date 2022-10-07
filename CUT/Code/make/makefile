@@ -5,10 +5,10 @@ sprint: main.o stringvalid.o createList.o addtoList.o validAdd.o invalidFile.o a
 projtest: testdriver.o stringvalid.o testsuite.o
 	gcc -o ../bin/projtest.exe ../bin/testdriver.o ../bin/testsuite.o -lcunit
          
-testdriver.o: ../scr/testdriver.c
+testdriver.o: ../src/testdriver.c
 	gcc -o ../bin/testdriver.o -c ../src/testdriver.c
               
-testsuite.o: ../scr/testsuite.c
+testsuite.o: ../src/testsuite.c
 	gcc -o ../bin/testsuite.o -c ../src/testsuite.c
              
 main.o: ../src/main.c
