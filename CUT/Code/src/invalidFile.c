@@ -9,7 +9,7 @@ void invalidFile(char str[MAX])
     // make a call to file mutex
     pthread_mutex_lock(&invalidLock);
     FILE *fp;
-    fp = fopen ("data/invalidRecord.txt", "a+");
+    fp = fopen ("../data/invalidRecord.txt", "a+");
     char s[MAX];
     strcpy(s,str);     //adding the invalid string to the file
     fputs(s, fp);
