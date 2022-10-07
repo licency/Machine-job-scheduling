@@ -5,7 +5,7 @@
 #include "header.h"
 #include "test.h"
 
-int init_suit_func(void);
+int init_suite_func(void);
 int clean_suite_func(void);
 
 void testSunnyCases(void);
