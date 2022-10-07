@@ -42,7 +42,7 @@ int stringValid(char str[MAX])
 		}
 		if(c>=3)
 		{
-			return SUCC;
+			return SUCCESS;
 		}
 		else
 		{
