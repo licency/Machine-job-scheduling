@@ -21,7 +21,7 @@ createList.o: ../src/createList.c
 	gcc -o ../obj/createList.o -c ../src/createList.c -lpthread -Wall
               
 addtoList.o: ../src/addtoList.c
-	gcc -o ../obj/addToList.o -c ../src/addtoList.c -lpthread -Wall
+	gcc -o ../obj/addtoList.o -c ../src/addtoList.c -lpthread -Wall
              
 validAdd.o: ../src/validAdd.c
 	gcc -o ../obj/validAdd.o -c ../src/validAdd.c -lpthread -Wall
